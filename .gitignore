@@ -14,9 +14,19 @@ venv/
 
 # Outputs / logs (generated data)
 output/
-*.csv
+output/*.csv
 *.log
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Build output
+build/
+dist/
+*.spec.bak
+
+# Machine-specific runtime state
+config/
+logs/
+

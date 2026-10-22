@@ -7,6 +7,7 @@ import os
 import csv
 
 from PyQt6.QtCore import QThread, pyqtSignal
+from lib import paths
 from lib.TeensySerialv4 import TeensySerial
 
 try:
@@ -183,10 +184,12 @@ class DataStream(QThread):
         return (n_bx, n_by, n_bz)
 
     def initialise_csv(self):
-        os.makedirs("output", exist_ok=True)
+        os.makedirs(paths.OUTPUT_DIR, exist_ok=True)
         formatted_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
-        self.csv_file = open(f"output/{self.sequence_name}_{formatted_time}.csv", "w", newline="")
+        csv_path = paths.output_file(f"{self.sequence_name}_{formatted_time}.csv")
+        self.csv_file = open(csv_path, "w", newline="")
         self.csv_writer = csv.writer(self.csv_file)
+        print(f"[INFO] Recording to {csv_path}")
 
         self.csv_writer.writerow([
             "real_time", "device_time_us", "t_rel_us", "dt_us", "fs_hz",

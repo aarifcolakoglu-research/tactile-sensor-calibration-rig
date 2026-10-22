@@ -3,11 +3,12 @@ import serial.tools.list_ports
 TEENSY_VID = 0x16C0  # Teensy vendor ID
 
 
-def list_serial_devices():
+def list_serial_devices(verbose: bool = True):
     ports = serial.tools.list_ports.comports()
     devices = []
 
-    print("\n--- Connected Serial Devices ---\n")
+    if verbose:
+        print("\n--- Connected Serial Devices ---\n")
 
     for p in ports:
         device_info = {
@@ -21,13 +22,13 @@ def list_serial_devices():
 
         devices.append(device_info)
 
-        # Genel listeleme
-        print(f"Port        : {p.device}")
-        print(f"Description : {p.description}")
-        print(f"Manufacturer: {p.manufacturer}")
-        print(f"VID:PID     : {p.vid}:{p.pid}")
-        print(f"Serial No   : {p.serial_number}")
-        print("-" * 50)
+        if verbose:
+            print(f"Port        : {p.device}")
+            print(f"Description : {p.description}")
+            print(f"Manufacturer: {p.manufacturer}")
+            print(f"VID:PID     : {p.vid}:{p.pid}")
+            print(f"Serial No   : {p.serial_number}")
+            print("-" * 50)
 
     return devices
 
@@ -40,6 +41,31 @@ def find_teensy(devices):
             teensy_ports.append(d)
 
     return teensy_ports
+
+
+def find_teensy_port(verbose: bool = False):
+    """
+    Quiet helper for the app: return the COM port of the first Teensy found
+    (VID 0x16C0), or None if no Teensy is connected.
+
+    Never raises - a failure to enumerate ports is treated as "not found".
+    """
+    try:
+        devices = list_serial_devices(verbose=verbose)
+        teensy_devices = find_teensy(devices)
+    except Exception as e:
+        if verbose:
+            print(f"[WARN] Serial port scan failed: {e}")
+        return None
+
+    if not teensy_devices:
+        return None
+
+    if len(teensy_devices) > 1 and verbose:
+        ports = ", ".join(t["port"] for t in teensy_devices)
+        print(f"[WARN] Multiple Teensy devices found ({ports}); using {teensy_devices[0]['port']}")
+
+    return teensy_devices[0]["port"]
 
 
 if __name__ == "__main__":

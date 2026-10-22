@@ -9,8 +9,8 @@ authors:
     orcid: "https://orcid.org/0000-0002-4409-1376"
 repository-code: "https://github.com/aarifcolakoglu-research/tactile-sensor-calibration-rig"
 license: GPL-3.0-only
-version: "1.0"
-date-released: "2026-02-01"
+version: "2.0"
+date-released: "2026-09-04"
 abstract: "Control and acquisition software for a three-axis rig that calibrates soft magnetic tactile force sensors against an ATI Nano17 force/torque transducer."
 keywords:
   - tactile sensor

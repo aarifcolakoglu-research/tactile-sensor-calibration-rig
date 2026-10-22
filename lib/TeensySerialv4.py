@@ -7,7 +7,14 @@ import threading
 from queue import Queue, Empty
 from typing import Optional, List, Tuple, Dict, Any
 
+try:
+    from lib.find_ports import find_teensy_port
+except ImportError:  # running standalone from inside lib/
+    from find_ports import find_teensy_port
+
 TeensyPacket = List[float]  # [Bx, By, Bz] or [Bx, By, Bz, Status]
+
+AUTO_PORT = "auto"
 
 
 class TeensySerial:
@@ -17,6 +24,13 @@ class TeensySerial:
     Supports:
       - 3 columns:  Bx, By, Bz
       - 4 columns:  Bx, By, Bz, Status
+
+    Port selection:
+      - port="auto" (or None): scan USB serial devices for the Teensy
+        vendor ID (0x16C0) and use the first match. If no Teensy is
+        present, connect() prints a warning and leaves self.ser = None
+        so the rest of the application keeps running without Teensy data.
+      - port="COM5": use the given port explicitly (old behaviour).
 
     Startup behaviour (v4):
       - Reset Teensy on each connect() (optional)
@@ -34,7 +48,7 @@ class TeensySerial:
 
     def __init__(
         self,
-        port: str = "COM5",
+        port: Optional[str] = AUTO_PORT,
         baudrate: int = 115200,
         timeout: float = 0.1,
         *,
@@ -58,7 +72,9 @@ class TeensySerial:
         # Logging
         verbose: bool = True,
     ):
-        self.port = port
+        # Requested port ("auto"/None => detect on every connect())
+        self.requested_port = port
+        self.port: Optional[str] = None if self._is_auto(port) else port
         self.baudrate = baudrate
         self.timeout = timeout
 
@@ -86,9 +102,30 @@ class TeensySerial:
     # -----------------------------
     # Public API
     # -----------------------------
+    @staticmethod
+    def _is_auto(port: Optional[str]) -> bool:
+        return port is None or str(port).strip().lower() == AUTO_PORT
+
+    def resolve_port(self) -> Optional[str]:
+        """
+        Return the COM port to use. In auto mode this scans for a Teensy
+        (VID 0x16C0) every time, so a Teensy plugged in after the app
+        started is still picked up on the next connect().
+        """
+        if not self._is_auto(self.requested_port):
+            self.port = self.requested_port
+            return self.port
+
+        found = find_teensy_port(verbose=False)
+        if found:
+            self._log(f"[INFO] Teensy auto-detected on {found}")
+        self.port = found
+        return found
+
     def connect(self) -> None:
         """
         Connect and prepare a clean run:
+          0) Resolve port (auto-detect Teensy if port="auto")
           1) Open serial
           2) Reset Teensy (optional) and reopen (optional)
           3) Wait for boot sync BEFORE flushing buffers
@@ -96,12 +133,24 @@ class TeensySerial:
           5) Start read thread
           6) Stabilize briefly
           7) Verify stream and print first samples
+
+        Never raises: on any failure self.ser is left as None and a
+        message is printed, so callers can carry on without Teensy data.
         """
         self._stop_event.clear()
 
         # If reconnecting, clean old thread/port
         if self._thread and self._thread.is_alive():
             self.disconnect()
+
+        # 0) Resolve port
+        port = self.resolve_port()
+        if not port:
+            # Not an error for the rest of the system: just no Teensy channel.
+            print("[WARN] No Teensy device found on this system (VID 0x16C0 not detected). "
+                  "Continuing WITHOUT Teensy data (raw_bx/by/bz will stay 0).")
+            self.ser = None
+            return
 
         try:
             self._log(f"[INFO] Opening serial: {self.port} @ {self.baudrate}")
@@ -461,7 +510,7 @@ class TeensySerial:
 # ------------------------------------------------------
 if __name__ == "__main__":
     t = TeensySerial(
-        port="COM5",
+        port="auto",
         baudrate=115200,
         reset_on_connect=True,
         boot_marker="BOOT:READY",
