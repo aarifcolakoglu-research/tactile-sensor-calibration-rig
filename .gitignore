@@ -1,0 +1,22 @@
+# PyCharm
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments (if any are created inside this repo)
+.venv/
+venv/
+.venv*/
+
+# Outputs / logs (generated data)
+output/
+*.csv
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

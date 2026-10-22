@@ -1,0 +1,3401 @@
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 20
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 20
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 20
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 20
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+X_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Y_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 10
+Z_Stage Velocity: 0.5, Distance: -0.1
+Pause Time: 20

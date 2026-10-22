@@ -1,0 +1,22 @@
+{
+  "title": "Tactile sensor calibration rig (ATI_App)",
+  "upload_type": "software",
+  "description": "Control and acquisition software for a three-axis rig that calibrates soft magnetic tactile force sensors against an ATI Nano17 force/torque transducer.",
+  "creators": [
+    {
+      "name": "Colakoglu, Ahmet Arif",
+      "affiliation": "University of Leeds",
+      "orcid": "0000-0002-4409-1376"
+    }
+  ],
+  "license": "gpl-3.0-only",
+  "keywords": [
+    "tactile sensor",
+    "calibration",
+    "force/torque",
+    "Thorlabs",
+    "Hall effect"
+  ],
+  "access_right": "open",
+  "version": "1.0"
+}

@@ -1,0 +1,64 @@
+# =========================
+# Core / Data
+# =========================
+numpy
+pandas
+scipy
+
+# =========================
+# Plot / Analysis
+# =========================
+matplotlib
+seaborn
+Pillow
+python-dateutil
+pytz
+packaging
+pyparsing
+contourpy
+cycler
+fonttools
+kiwisolver
+typing_extensions
+
+# =========================
+# GUI (PyQt6 stack)
+# =========================
+PyQt6
+PyQt6-Charts
+pyqtgraph
+customtkinter
+darkdetect
+
+# =========================
+# Hardware / IO / Comms
+# =========================
+pyserial      # import name: serial
+pyusb
+PyVISA
+pyyaml
+tqdm
+
+# =========================
+# Rig / tooling utilities
+# =========================
+prettytable
+plumbum
+rpyc
+intelhex
+future
+pyft232
+pylablib
+
+# =========================
+# Windows / system
+# =========================
+pywin32
+filelock
+platformdirs
+virtualenv
+wcwidth
+zipp
+importlib-resources
+Jinja2
+MarkupSafe

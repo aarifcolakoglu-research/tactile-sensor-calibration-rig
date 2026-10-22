@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the article and the software."
+title: "Tactile sensor calibration rig (ATI_App)"
+type: software
+authors:
+  - family-names: Colakoglu
+    given-names: Ahmet Arif
+    affiliation: University of Leeds
+    orcid: "https://orcid.org/0000-0002-4409-1376"
+repository-code: "https://github.com/aarifcolakoglu-research/tactile-sensor-calibration-rig"
+license: GPL-3.0-only
+version: "1.0"
+date-released: "2026-02-01"
+abstract: "Control and acquisition software for a three-axis rig that calibrates soft magnetic tactile force sensors against an ATI Nano17 force/torque transducer."
+keywords:
+  - tactile sensor
+  - calibration
+  - force/torque
+  - Thorlabs
+  - Hall effect
+preferred-citation:
+  type: article
+  title: "Evaluation of an Instrumented Helmet for Measurement of Orthosis–Head Interface Forces in Pediatric Craniosynostosis"
+  authors:
+    - family-names: Colakoglu
+      given-names: Ahmet Arif
+  # journal, year, doi: to be added on publication
