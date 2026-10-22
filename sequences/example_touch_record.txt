@@ -1,0 +1,21 @@
+# Example: point-wise force calibration with Touch Point and Record Point steps.
+# Lines starting with '#' are comments. Load it with "Load" and read each step in
+# the editor before running it on real hardware.
+#
+# 1) find the sensor surface and use it as the zero-indentation reference
+Touch Point
+# 2) indent in 0.1 mm steps; after each step let it settle, then log the mean F/T
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Record Point 0.1 mm
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Record Point 0.2 mm
+Z_Stage Velocity: 0.5, Distance: 0.1
+Pause Time: 10
+Record Point 0.3 mm
+# 3) unload and leave a 1 mm gap above the sensor
+Z_Stage Velocity: 0.5, Distance: -0.3
+Pause Time: 10
+Record Point unloaded
+Z_Stage Velocity: 1, Distance: -1

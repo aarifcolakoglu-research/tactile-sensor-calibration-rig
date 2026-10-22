@@ -6,7 +6,7 @@ you can read it while troubleshooting. Built as a windowed Windows program
 there is no terminal at all, and those lines - which is exactly what we look at
 when an axis will not home or the Ethernet board is stuck - would be lost.
 
-start_logging() mirrors stdout and stderr into logs/ATI_App_<date>.log beside
+start_logging() mirrors stdout and stderr into logs/ATI_Rig_<date>.log beside
 the application, keeping the console output as well when there is one.
 """
 
@@ -71,7 +71,7 @@ def start_logging() -> str | None:
     """Begin mirroring output to a dated log file. Returns its path, or None."""
     try:
         os.makedirs(LOG_DIR, exist_ok=True)
-        path = os.path.join(LOG_DIR, f"ATI_App_{time.strftime('%Y-%m-%d')}.log")
+        path = os.path.join(LOG_DIR, f"ATI_Rig_{time.strftime('%Y-%m-%d')}.log")
         log_file = open(path, "a", encoding="utf-8", buffering=1)
     except Exception as e:
         print(f"[WARN] Could not open a log file: {e}")

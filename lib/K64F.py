@@ -42,6 +42,12 @@ CALIBRATION_MATRIX = [
 ]
 
 
+def u32_delta_us(now_us, prev_us):
+    """Microseconds from prev_us to now_us on the device's uint32 clock,
+    correct across its wrap (2**32 us = 71.6 min)."""
+    return (int(now_us) - int(prev_us)) & 0xFFFFFFFF
+
+
 def print_combined_table(values):
     """
     Optional terminal helper: prints a one-line combined table with ANSI colors.
@@ -92,6 +98,7 @@ class DataStream(QThread):
         self.time = 0
         self.start_time = 0
         self.prev_device_time_us = None
+        self.t_rel_us = 0
 
         # ATI + encoder storage (6 + 3)
         self.all_data = tuple([0] * 9)
@@ -186,7 +193,9 @@ class DataStream(QThread):
     def initialise_csv(self):
         os.makedirs(paths.OUTPUT_DIR, exist_ok=True)
         formatted_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
-        csv_path = paths.output_file(f"{self.sequence_name}_{formatted_time}.csv")
+        # "_stream_" tag so this high-rate file is easy to tell apart from the
+        # "_calibration_" one written alongside it.
+        csv_path = paths.output_file(f"{self.sequence_name}_stream_{formatted_time}.csv")
         self.csv_file = open(csv_path, "w", newline="")
         self.csv_writer = csv.writer(self.csv_file)
         print(f"[INFO] Recording to {csv_path}")
@@ -202,6 +211,7 @@ class DataStream(QThread):
 
         self.start_time = self.time
         self.prev_device_time_us = self.time
+        self.t_rel_us = 0
 
     def close_csv(self):
         try:
@@ -267,14 +277,18 @@ class DataStream(QThread):
                     time_us, fx, fy, fz, tx, ty, tz, px, py, pz, raw_bx, raw_by, raw_bz, n_bx, n_by, n_bz = updatVals
 
                     real_time = datetime.now().isoformat(timespec="microseconds")
-                    t_rel_us = self.time - self.start_time
-
+                    # The device clock is a uint32 in us and wraps every
+                    # 71.6 min; t_rel_us and dt_us are accumulated across the
+                    # wrap so they stay continuous for runs of any length
+                    # (device_time_us is written raw).
                     if self.prev_device_time_us is None:
                         dt_us = 0
                         fs_hz = 0.0
                     else:
-                        dt_us = int(self.time - self.prev_device_time_us)
+                        dt_us = u32_delta_us(self.time, self.prev_device_time_us)
                         fs_hz = (1_000_000.0 / dt_us) if dt_us > 0 else 0.0
+                    self.t_rel_us += dt_us
+                    t_rel_us = self.t_rel_us
 
                     self.prev_device_time_us = self.time
 
@@ -470,6 +484,11 @@ class K64F:
             except Exception as e:
                 self.connected = False
                 print(f"[WARN] Ethernet connect failed (attempt {attempt}/{retries}): {e}")
+                # A socket whose connect() failed cannot be connected again:
+                # reusing it made every later attempt fail at once with
+                # WinError 10022 (seen 1 Oct 2026, K64F still booting).
+                self._close_socket()
+                self._make_socket()
                 time.sleep(backoff_s)
 
         print("[ERROR] Ethernet reconnect failed after retries.")

@@ -1,4 +1,4 @@
-Tactile sensor calibration rig (ATI_App)
+Tactile sensor calibration rig (ATI Rig)
 Copyright (C) 2026 Ahmet Arif Colakoglu (https://github.com/aarifcolakoglu-research)
 
 Parts of this program (stage control, K64F client and display structure) are adapted

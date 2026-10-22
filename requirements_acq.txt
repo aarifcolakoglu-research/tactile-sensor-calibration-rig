@@ -53,7 +53,7 @@ pylablib==1.4.5
 # =========================
 # Windows / system
 # =========================
-pywin32==312; sys_platform == "win32"
+pywin32==312
 filelock==3.32.5
 platformdirs==4.11.7
 virtualenv==21.7.8

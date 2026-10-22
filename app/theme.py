@@ -1,5 +1,5 @@
 """
-Shared visual language for the ATI rig application.
+Shared visual language for the ATI Rig application.
 
 One place for the palette, the series colours and the stylesheet, so the stage
 panel and the sensor panel look like one instrument rather than two windows
@@ -11,8 +11,48 @@ switched at runtime from the View menu and remembered in config/ui.json.
 
 import json
 import os
+import tempfile
 
 from lib import paths
+
+# Spin-box arrows are painted to small PNGs and referenced from the stylesheet.
+# Qt's QSS border-triangle trick renders a pin-prick on Windows, and it has no
+# reliable SVG-in-QSS path, so a real raster icon is the dependable option.
+_ARROW_CACHE = {}
+
+
+def _arrow_icon(direction: str, colour: str, box: int) -> str:
+    key = (direction, colour, box)
+    cached = _ARROW_CACHE.get(key)
+    if cached and os.path.exists(cached):
+        return cached
+    from PyQt6.QtCore import QPointF, Qt
+    from PyQt6.QtGui import QColor, QImage, QPainter, QPolygonF
+
+    img = QImage(box, box, QImage.Format.Format_ARGB32)
+    img.fill(Qt.GlobalColor.transparent)
+    p = QPainter(img)
+    p.setRenderHint(QPainter.RenderHint.Antialiasing, True)
+    p.setPen(Qt.PenStyle.NoPen)
+    p.setBrush(QColor(colour))
+    m = box * 0.30            # margin
+    mid = box / 2.0
+    if direction == "up":
+        pts = [QPointF(m, box - m), QPointF(box - m, box - m), QPointF(mid, m)]
+    else:
+        pts = [QPointF(m, m), QPointF(box - m, m), QPointF(mid, box - m)]
+    p.drawPolygon(QPolygonF(pts))
+    p.end()
+
+    path = os.path.join(tempfile.gettempdir(),
+                        f"ati_arrow_{direction}_{colour.lstrip('#')}_{box}.png")
+    img.save(path, "PNG")
+    _ARROW_CACHE[key] = path
+    return path
+
+
+def _arrow_url(direction: str, colour: str, box: int) -> str:
+    return _arrow_icon(direction, colour, box).replace("\\", "/")
 
 # Beside the executable when frozen, beside the project when run from source -
 # never in whatever folder a desktop shortcut happens to start in.
@@ -50,8 +90,10 @@ LIGHT = {
     "PLOT_BG": "#ffffff",
     "POSITION_COLOR": "#334155",
     "SERIES": {
+        "px": "#64748b", "py": "#475569", "pz": "#1e293b",
         "fx": "#d62728", "fy": "#1f6fb4", "fz": "#2e8b3d",
         "tx": "#8b5cb8", "ty": "#e07b00", "tz": "#8c564b",
+        "raw_bx": "#b02a70", "raw_by": "#565c66", "raw_bz": "#0b7d88",
         "n_bx": "#d63b8f", "n_by": "#6b7280", "n_bz": "#0f9aa8",
     },
 }
@@ -84,8 +126,10 @@ DARK = {
     "POSITION_COLOR": "#ccd3dc",
     # Brighter, higher-chroma variants so the traces stay separable on a dark ground
     "SERIES": {
+        "px": "#94a3b8", "py": "#cbd5e1", "pz": "#e2e8f0",
         "fx": "#ff7b7b", "fy": "#6bb2ff", "fz": "#5ed48c",
         "tx": "#c79bff", "ty": "#ffb066", "tz": "#d09a80",
+        "raw_bx": "#e56bb0", "raw_by": "#8b929c", "raw_bz": "#3ac0cc",
         "n_bx": "#ff8ccd", "n_by": "#aeb8c4", "n_bz": "#45dbe6",
     },
 }
@@ -126,7 +170,7 @@ NANO17_RANGE_TEXT = (
 )
 
 # View ▸ Font size range: 70 %–120 %, in 5 % steps in the menu;
-# other values can be entered with View ▸ Font size ▸ Custom…
+# values in between can be entered with View ▸ Font size ▸ Custom….
 FONT_SCALE_MIN = 0.70
 FONT_SCALE_MAX = 1.20
 FONT_SCALE_STEP = 0.05
@@ -139,8 +183,10 @@ for _i in range(int(round((FONT_SCALE_MAX - FONT_SCALE_MIN) / FONT_SCALE_STEP)) 
 # ---------------------------------------------------------------------------
 # Current settings (module-level so every widget reads the same values)
 # ---------------------------------------------------------------------------
-MODE = "light"
-SCALE = 1.0
+DEFAULT_MODE = "dark"
+DEFAULT_SCALE = 0.85
+MODE = DEFAULT_MODE
+SCALE = DEFAULT_SCALE
 
 # Names exported for convenience; refreshed by _apply()
 BG = PANEL = PANEL_ALT = BORDER = BORDER_STRONG = ""
@@ -165,6 +211,13 @@ def _apply():
 def px(size: float) -> int:
     """Scale a design pixel size by the current font scale."""
     return max(1, round(size * SCALE))
+
+
+# How far a QGroupBox's frame starts below the top of the widget: the title
+# sits in this margin, straddling the border. Shared with the stage tool
+# column (ATI.StagePanel) so its buttons start at the axis cards'
+# FRAME, not at the top of their titles.
+GROUPBOX_MARGIN_TOP = 15
 
 
 def pt(size: float) -> int:
@@ -196,12 +249,19 @@ SHOW_STATUS_BAR = True
 # the chart legend takes over the job of identifying the traces.
 SHOW_READOUT = True
 
+# Which channels are drawn on the live chart. Every readout channel has a
+# checkbox; force + torque are on by default, position / raw Teensy / normalised
+# Teensy are opt-in (they live on very different scales).
+CHART_CHANNELS_DEFAULT = ["fx", "fy", "fz", "tx", "ty", "tz"]
+CHART_CHANNELS = list(CHART_CHANNELS_DEFAULT)
+
 # Where the window was and how big, plus how the stage/sensor splitter was
 # divided, so the app reopens the way it was left. Stored as the base64 of
 # QMainWindow.saveGeometry(), which also carries the maximised state and which
 # monitor the window was on. None means "never saved" - use the defaults.
 WINDOW_GEOMETRY = None
-SPLITTER_SIZES = None
+SPLITTER_SIZES = None          # legacy; no longer used (kept so old ui.json loads)
+WINDOW_STATE = None            # QMainWindow.saveState() base64 — the dock layout
 
 
 # ---------------------------------------------------------------------------
@@ -209,26 +269,32 @@ SPLITTER_SIZES = None
 # ---------------------------------------------------------------------------
 def load_settings():
     global SHOW_STATUS_BAR, SHOW_READOUT, WINDOW_GEOMETRY, SPLITTER_SIZES
+    global WINDOW_STATE, CHART_CHANNELS
     try:
         with open(SETTINGS_FILE, "r") as f:
             data = json.load(f)
-        set_mode(data.get("theme", "light"))
-        set_scale(data.get("font_scale", 1.0))
+        set_mode(data.get("theme", DEFAULT_MODE))
+        set_scale(data.get("font_scale", DEFAULT_SCALE))
         SHOW_STATUS_BAR = bool(data.get("show_status_bar", True))
         SHOW_READOUT = bool(data.get("show_readout", True))
 
+        chans = data.get("chart_channels")
+        CHART_CHANNELS = ([str(c) for c in chans] if isinstance(chans, list)
+                          else list(CHART_CHANNELS_DEFAULT))
+
         geometry = data.get("window_geometry")
         WINDOW_GEOMETRY = geometry if isinstance(geometry, str) and geometry else None
-        sizes = data.get("splitter_sizes")
-        SPLITTER_SIZES = ([int(v) for v in sizes]
-                          if isinstance(sizes, list) and all(
-                              isinstance(v, (int, float)) for v in sizes) else None)
+        state = data.get("window_state")
+        WINDOW_STATE = state if isinstance(state, str) and state else None
+        SPLITTER_SIZES = None
     except Exception:
-        set_mode("light")
-        set_scale(1.0)
+        set_mode(DEFAULT_MODE)
+        set_scale(DEFAULT_SCALE)
         SHOW_STATUS_BAR = True
         SHOW_READOUT = True
+        CHART_CHANNELS = list(CHART_CHANNELS_DEFAULT)
         WINDOW_GEOMETRY = None
+        WINDOW_STATE = None
         SPLITTER_SIZES = None
 
 
@@ -239,8 +305,9 @@ def save_settings():
             json.dump({"theme": MODE, "font_scale": SCALE,
                        "show_status_bar": SHOW_STATUS_BAR,
                        "show_readout": SHOW_READOUT,
+                       "chart_channels": CHART_CHANNELS,
                        "window_geometry": WINDOW_GEOMETRY,
-                       "splitter_sizes": SPLITTER_SIZES}, f, indent=2)
+                       "window_state": WINDOW_STATE}, f, indent=2)
     except Exception as e:
         print(f"[WARN] Could not save UI settings: {e}")
 
@@ -252,6 +319,18 @@ _apply()
 # Stylesheet
 # ---------------------------------------------------------------------------
 def stylesheet() -> str:
+    # Spin-box geometry, worked out here rather than inline so the step buttons
+    # land exactly on the padding box: any overflow would paint over the 1px
+    # frame and hide the focus outline along the top and bottom edges.
+    sb_pad_v = px(3)              # field's vertical padding
+    sb_content = px(28)           # field's content height (locked below)
+    sb_inner = sb_content + 2 * sb_pad_v     # == padding-box height
+    sb_btn_w = px(30)             # one step button
+    sb_arrow = px(15)
+    # Combo boxes carry different padding; give them the content height that
+    # lands on the same overall height, so a spin box and a combo sitting on one
+    # row (the Pause dialog) line up.
+    cmb_content = max(px(14), sb_inner - 2 * px(4))
     return f"""
     QWidget {{
         background: {CHROME_BG};
@@ -262,6 +341,11 @@ def stylesheet() -> str:
 
     QMenuBar {{ background: {CHROME_BG}; color: {CHROME_TEXT};
                 border-bottom: 1px solid {CHROME_BORDER}; }}
+
+    /* Thin handle between the dock panes. */
+    QMainWindow::separator {{ background: {CHROME_BORDER}; width: 3px; height: 3px; }}
+    QMainWindow::separator:hover {{ background: {ACCENT}; }}
+    QDockWidget::title {{ background: {PANEL}; padding: {px(3)}px {px(8)}px; }}
     QMenuBar::item {{ padding: {px(4)}px {px(10)}px; background: transparent; }}
     QMenuBar::item:selected {{ background: {ACCENT_SOFT}; }}
     QMenu {{ background: {PANEL}; color: {TEXT}; border: 1px solid {BORDER};
@@ -273,7 +357,7 @@ def stylesheet() -> str:
         background: {PANEL};
         border: 1px solid {BORDER};
         border-radius: 6px;
-        margin-top: {px(15)}px;
+        margin-top: {px(GROUPBOX_MARGIN_TOP)}px;
         padding: {px(8)}px;
         font-weight: 600;
     }}
@@ -309,21 +393,40 @@ def stylesheet() -> str:
         min-height: {px(20)}px;
     }}
     QPushButton:hover  {{ background: {ACCENT_SOFT}; border-color: {ACCENT}; }}
-    QPushButton:pressed {{ background: {ACCENT_SOFT}; }}
+    /* Pressed used to reuse :hover's light tint verbatim, so clicking a
+       button looked identical to merely resting the mouse on it - no
+       "give" at all. A pressed button now goes to the accent colour (a
+       step darker than hover, not lighter) and its content nudges down
+       and right by 2px within the same footprint (padding shifts by +2/-2
+       on opposite sides, so the button's own size does not jump). */
+    QPushButton:pressed {{
+        background: {ACCENT}; border-color: {ACCENT_DARK}; color: #ffffff;
+        padding: {px(8)}px {px(13)}px {px(4)}px {px(9)}px;
+    }}
     QPushButton:disabled {{ color: {TEXT_FAINT}; background: {PANEL_ALT};
                             border-color: {BORDER}; }}
     QPushButton:checked {{ background: {ACCENT}; border-color: {ACCENT_DARK};
                            color: #ffffff; font-weight: 600; }}
+    QPushButton:checked:pressed {{ background: {ACCENT_DARK}; }}
 
     QPushButton#Primary {{
         background: {ACCENT}; border-color: {ACCENT_DARK};
         color: #ffffff; font-weight: 600;
     }}
     QPushButton#Primary:hover {{ background: {ACCENT_DARK}; }}
+    /* Was falling through to the generic :pressed above, i.e. ACCENT_SOFT -
+       a light tint - so clicking Acquire or Run Sequence made the button
+       flash LIGHTER than its own hover state: pressed looked less
+       committed than merely hovering. Needs its own, darker still. */
+    QPushButton#Primary:pressed {{ background: {ACCENT_DARK}; border-color: {ACCENT_DARK}; }}
     QPushButton#Primary:checked {{ background: {DANGER}; border-color: {DANGER}; }}
+    QPushButton#Primary:checked:pressed {{ background: {DANGER}; border-color: {DANGER}; }}
 
     QPushButton#Danger {{ color: {DANGER}; }}
     QPushButton#Danger:hover {{ background: {DANGER_SOFT}; border-color: {DANGER}; }}
+    /* Same fix: was flashing the accent tint on click instead of a danger
+       one. */
+    QPushButton#Danger:pressed {{ background: {DANGER}; border-color: {DANGER}; color: #ffffff; }}
 
     QPushButton#RowRemove {{
         border: none; background: transparent; color: {TEXT_FAINT};
@@ -334,8 +437,10 @@ def stylesheet() -> str:
     }}
     QPushButton#RowRemove:hover {{ color: {DANGER}; background: {DANGER_SOFT};
                                    border-radius: 3px; }}
+    QPushButton#RowRemove:pressed {{ color: #ffffff; background: {DANGER};
+                                     border-radius: 3px; }}
 
-    QLineEdit, QComboBox, QDoubleSpinBox {{
+    QLineEdit, QComboBox {{
         background: {PANEL};
         border: 1px solid {BORDER_STRONG};
         border-radius: 5px;
@@ -344,7 +449,69 @@ def stylesheet() -> str:
         selection-background-color: {ACCENT};
         selection-color: #ffffff;
     }}
-    QLineEdit:focus, QComboBox:focus, QDoubleSpinBox:focus {{ border-color: {ACCENT}; }}
+    QDialog QComboBox {{ min-height: {cmb_content}px; }}
+    QLineEdit:focus, QComboBox:focus {{ border-color: {ACCENT}; }}
+
+    /* Spin boxes: fully style the sub-controls, otherwise Qt drops the arrows
+       as soon as any stylesheet touches the widget. Buttons are sized for a
+       comfortable click target. */
+    QAbstractSpinBox {{
+        background: {PANEL};
+        border: 1px solid {BORDER_STRONG};
+        border-radius: 5px;
+        padding: {sb_pad_v}px {px(6)}px;
+        padding-right: {2 * sb_btn_w + px(4)}px;
+        color: {TEXT};
+        min-height: {sb_content}px;
+        max-height: {sb_content}px;
+        selection-background-color: {ACCENT};
+        selection-color: #ffffff;
+    }}
+    QAbstractSpinBox:focus {{ border-color: {ACCENT}; }}
+    /* Two step buttons side by side on the right edge. They are anchored to the
+       padding box and are exactly as tall as it, so the 1px frame (and the blue
+       focus outline) stays visible along the top and bottom. The right corners
+       take the frame's inner radius so the rounding is not squared off. */
+    QAbstractSpinBox::up-button {{
+        subcontrol-origin: padding;
+        subcontrol-position: right;
+        width: {sb_btn_w}px;
+        height: {sb_inner}px;
+        margin: 0px;
+        background: {PANEL_ALT};
+        border-left: 1px solid {BORDER_STRONG};
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }}
+    QAbstractSpinBox::down-button {{
+        subcontrol-origin: padding;
+        subcontrol-position: right;
+        width: {sb_btn_w}px;
+        height: {sb_inner}px;
+        margin: 0px {sb_btn_w}px 0px 0px;
+        background: {PANEL_ALT};
+        border: none;
+    }}
+    QAbstractSpinBox::up-button:hover, QAbstractSpinBox::down-button:hover {{
+        background: {ACCENT_SOFT};
+    }}
+    QAbstractSpinBox::up-button:pressed, QAbstractSpinBox::down-button:pressed {{
+        background: {ACCENT};
+    }}
+    QAbstractSpinBox::up-arrow {{
+        image: url("{_arrow_url('up', TEXT, px(18))}");
+        width: {sb_arrow}px; height: {sb_arrow}px;
+    }}
+    QAbstractSpinBox::down-arrow {{
+        image: url("{_arrow_url('down', TEXT, px(18))}");
+        width: {sb_arrow}px; height: {sb_arrow}px;
+    }}
+    QAbstractSpinBox::up-arrow:disabled {{
+        image: url("{_arrow_url('up', TEXT_FAINT, px(18))}");
+    }}
+    QAbstractSpinBox::down-arrow:disabled {{
+        image: url("{_arrow_url('down', TEXT_FAINT, px(18))}");
+    }}
     QLineEdit#Numeric {{ font-family: {MONO}; }}
     QComboBox::drop-down {{ border: none; width: {px(16)}px; }}
     QComboBox QAbstractItemView {{ background: {PANEL}; color: {TEXT};

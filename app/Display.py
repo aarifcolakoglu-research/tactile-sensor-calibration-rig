@@ -5,7 +5,7 @@ from PyQt6.QtGui import QPen, QColor, QFont
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QVBoxLayout, QHBoxLayout, QGridLayout,
     QPushButton, QWidget, QLabel, QGroupBox, QComboBox, QSizePolicy,
-    QMessageBox, QFrame
+    QMessageBox, QFrame, QCheckBox, QDialog
 )
 from PyQt6.QtCharts import QChart, QChartView, QLineSeries, QValueAxis
 from PyQt6.QtCore import Qt, QThread, pyqtSignal, QMargins, QTimer
@@ -13,6 +13,52 @@ from PyQt6.QtCore import Qt, QThread, pyqtSignal, QMargins, QTimer
 from lib.K64F import K64F, TeensyThread, IP_ADDRESS, TCP_PORT
 from lib.find_ports import find_teensy_port
 from . import theme
+
+
+def _pill_style(obj_name: str, colour: str) -> str:
+    """The look of the sensor link pill."""
+    return (f"#{obj_name} {{ color: {colour}; font-weight: 700; "
+            f"font-size: {theme.px(11)}px; border: 1px solid {colour}; "
+            f"border-radius: 3px; padding: 2px; }}")
+
+
+class ConnectionDialog(QDialog):
+    """Shows a connection's details as selectable text, with Copy and a
+    context action (Reconnect / Re-check)."""
+
+    def __init__(self, title, body, action_label, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle(title)
+        self.do_action = False
+
+        text = QLabel(body)
+        text.setTextInteractionFlags(
+            Qt.TextInteractionFlag.TextSelectableByMouse
+            | Qt.TextInteractionFlag.TextSelectableByKeyboard)
+        text.setStyleSheet(f"font-family: {theme.MONO}; font-size: {theme.px(12)}px;")
+
+        copy_btn = QPushButton("Copy")
+        copy_btn.clicked.connect(lambda: QApplication.clipboard().setText(body))
+        act_btn = QPushButton(action_label)
+        act_btn.clicked.connect(self._act)
+        close_btn = QPushButton("Close")
+        close_btn.clicked.connect(self.reject)
+        close_btn.setDefault(True)
+
+        buttons = QHBoxLayout()
+        buttons.addWidget(copy_btn)
+        buttons.addWidget(act_btn)
+        buttons.addStretch(1)
+        buttons.addWidget(close_btn)
+
+        layout = QVBoxLayout()
+        layout.addWidget(text)
+        layout.addLayout(buttons)
+        self.setLayout(layout)
+
+    def _act(self):
+        self.do_action = True
+        self.accept()
 
 # Rolling plot window (samples shown on screen)
 PLOT_WINDOW = 100
@@ -69,6 +115,35 @@ DEFAULT_Y_RANGE_INDEX = next(
     (i for i, (_, v) in enumerate(Y_RANGE_PRESETS) if v == 20.0), 1)
 
 
+class _K64FCall(QThread):
+    """Runs one blocking K64F network call off the GUI thread.
+
+    lib/K64F.py's own connect / start / reconnect logic is upstream ATI_Rig
+    behaviour (rig acquisition) and is untouched here - same functions, same
+    retries, same messages. Only the thread that INVOKES them changes.
+
+    Why this exists: K64F.start_acquisition() and K64F.reconnect() each carry
+    a bounded retry-with-backoff for a link that has gone stale (the
+    documented "Ethernet board needs a power cycle" failure mode). Measured
+    against a genuinely dead link, start_acquisition() alone blocks for ~8 s
+    and reconnect() for up to ~17 s. Both used to run directly on the GUI
+    thread, so pressing Acquire or Reconnect on a bad link froze the entire
+    application - every button, the chart, all of it - for that whole time.
+    """
+    done = pyqtSignal()
+
+    def __init__(self, fn, parent=None):
+        super().__init__(parent)
+        self._fn = fn
+
+    def run(self):
+        try:
+            self._fn()
+        except Exception as e:
+            print(f"[ERROR] Background K64F call raised: {e}")
+        self.done.emit()
+
+
 class SensorPanel(QWidget):
     """
     Live sensor readout: numeric indicators plus a rolling chart.
@@ -84,7 +159,14 @@ class SensorPanel(QWidget):
         super().__init__(parent)
         self.touch_data_queue = touch_data_queue
 
-        self.data_labels = ["fx", "fy", "fz", "tx", "ty", "tz", "n_bx", "n_by", "n_bz"]
+        # Every readout channel is a chart series now; a checkbox by each label
+        # toggles it. Force + torque are visible by default (theme.CHART_CHANNELS).
+        self.data_labels = ["px", "py", "pz",
+                            "fx", "fy", "fz", "tx", "ty", "tz",
+                            "raw_bx", "raw_by", "raw_bz",
+                            "n_bx", "n_by", "n_bz"]
+        self.chart_series = {}
+        self.channel_checks = {}
 
         # ---------------- chart ----------------
         self.chart = QChart()
@@ -140,6 +222,8 @@ class SensorPanel(QWidget):
             self.chart.addSeries(series)
             series.attachAxis(self.axisX)
             series.attachAxis(self.axisY)
+            series.setVisible(name in theme.CHART_CHANNELS)
+            self.chart_series[name] = series
 
         # ---------------- controls ----------------
         self.acquire_button = QPushButton("Acquire")
@@ -153,9 +237,13 @@ class SensorPanel(QWidget):
             "If this does not help, power-cycle the board's supply and restart the app.")
         self.reconnect_button.clicked.connect(self.reconnect_ethernet)
 
-        self.link_label = QLabel("LINK ?")
-        self.link_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.link_label.setFixedWidth(theme.px(96))
+        # The F/T sensor link pill; click it for copyable connection details.
+        self.link_label = QPushButton("LINK ?")
+        self.link_label.setObjectName("LinkPill")
+        self.link_label.setFlat(True)
+        self.link_label.setFixedWidth(theme.px(90))
+        self.link_label.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.link_label.clicked.connect(self._show_link_details)
 
         self.zero_button = QPushButton("Zero")
         self.zero_button.setToolTip("Subtract the current reading as an offset "
@@ -208,29 +296,36 @@ class SensorPanel(QWidget):
         grid.setVerticalSpacing(3)
 
         for col, (section, channels, unit) in enumerate((
-            ("Position", [("px", None), ("py", None), ("pz", None)], "mm"),
-            ("Force", [("fx", "fx"), ("fy", "fy"), ("fz", "fz")], "N"),
-            ("Torque", [("tx", "tx"), ("ty", "ty"), ("tz", "tz")], "N·mm"),
-            ("Teensy raw", [("raw_bx", None), ("raw_by", None), ("raw_bz", None)], ""),
-            ("Teensy norm.", [("n_bx", "n_bx"), ("n_by", "n_by"), ("n_bz", "n_bz")], ""),
+            ("Position", ["px", "py", "pz"], "mm"),
+            ("Force", ["fx", "fy", "fz"], "N"),
+            ("Torque", ["tx", "ty", "tz"], "N·mm"),
+            ("Teensy raw", ["raw_bx", "raw_by", "raw_bz"], ""),
+            ("Teensy norm.", ["n_bx", "n_by", "n_bz"], ""),
         )):
-            # Three columns per group: label, value, then a spacer that takes
-            # the slack. Stretching the VALUE column instead would push every
-            # number to the far right of its group, leaving a gap between a
-            # label and the figure it belongs to.
+            # Three columns per group: the label (now a checkbox that toggles the
+            # trace), the value, then a spacer that takes the slack.
             name_col, value_col, gap_col = col * 3, col * 3 + 1, col * 3 + 2
 
             header = QLabel(f"{section}  {unit}".strip())
             header.setObjectName("SectionLabel")
             grid.addWidget(header, 0, name_col, 1, 2)
 
-            for i, (key, colour_key) in enumerate(channels, start=1):
-                name = QLabel(key)
-                self.indicator_names[key] = (name, colour_key)
+            for i, key in enumerate(channels, start=1):
+                check = QCheckBox(key)
+                check.blockSignals(True)
+                check.setChecked(key in theme.CHART_CHANNELS)
+                check.blockSignals(False)
+                check.setToolTip(f"Show {key} on the chart")
+                # 'clicked' (not 'toggled') so only a real click ever persists a
+                # selection — programmatic state changes stay silent.
+                check.clicked.connect(lambda on, k=key: self._toggle_channel(k, on))
+                self.channel_checks[key] = check
+                self.indicator_names[key] = (check, key)
+
                 value = QLabel("—")
                 value.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
                 value.setMinimumWidth(theme.px(58))
-                grid.addWidget(name, i, name_col)
+                grid.addWidget(check, i, name_col)
                 grid.addWidget(value, i, value_col)
                 self.indicators[key] = value
 
@@ -293,6 +388,12 @@ class SensorPanel(QWidget):
 
         self.teensy_thread = None
         self.acquisition_active = False
+        # Mutual exclusion for the two K64F calls that can run for several
+        # seconds on a bad link (start_acquisition, reconnect) - see
+        # _K64FCall. Both acquire_button and reconnect_button are disabled
+        # for as long as either is in flight, so only one ever touches the
+        # socket at a time.
+        self._k64f_worker = None
 
         # Link watchdog: counts samples so a silent stream can be detected.
         self._sample_count = 0
@@ -331,7 +432,7 @@ class SensorPanel(QWidget):
         """Re-apply colours and font sizes after the theme or scale changes."""
         self._restyle_indicators()
         self._set_recording_style(self._recording)
-        self.link_label.setFixedWidth(theme.px(96))
+        self.link_label.setFixedWidth(theme.px(90))
         self._set_link_state(getattr(self, "_link_ok", False))
 
         self.chart.setBackgroundBrush(QColor(theme.CHART_FRAME))
@@ -390,12 +491,25 @@ class SensorPanel(QWidget):
     def _update_auto_range(self):
         lo, hi = None, None
         for series in self.chart.series():
+            if not series.isVisible():
+                continue
             for p in series.points():
                 v = p.y()
                 lo = v if lo is None else min(lo, v)
                 hi = v if hi is None else max(hi, v)
         if lo is not None:
             self._auto_lo, self._auto_hi = lo, hi
+
+    def _toggle_channel(self, key: str, on: bool):
+        series = self.chart_series.get(key)
+        if series is not None:
+            series.setVisible(on)
+        theme.CHART_CHANNELS = [k for k in self.data_labels
+                                if self.channel_checks[k].isChecked()]
+        theme.save_settings()
+        if Y_RANGE_PRESETS[self.y_range_combo.currentIndex()][1] is None:
+            self._update_auto_range()
+            self.apply_y_range()
 
     def set_readout_visible(self, visible: bool):
         """
@@ -418,12 +532,24 @@ class SensorPanel(QWidget):
         colour = theme.OK if connected else theme.DANGER
         self.link_label.setText(text)
         self.link_label.setToolTip(
-            f"Sensor controller {IP_ADDRESS}:{TCP_PORT} — "
-            + ("connected." if connected else
-               "not reachable. Power-cycle the Ethernet board's supply and restart."))
-        self.link_label.setStyleSheet(
-            f"color: {colour}; font-weight: 700; font-size: {theme.px(11)}px;"
-            f"border: 1px solid {colour}; border-radius: 3px; padding: 2px;")
+            "Force/torque sensor — NXP K64F controller\n"
+            f"{IP_ADDRESS}:{TCP_PORT}\n"
+            + ("Connected." if connected else
+               "Not reachable — power-cycle the Ethernet board's supply and restart.")
+            + "\n(click for details)")
+        self.link_label.setStyleSheet(_pill_style("LinkPill", colour))
+
+    def _show_link_details(self):
+        connected = getattr(self, "_link_ok", False)
+        body = ("Force/torque sensor\n"
+                "  Controller   NXP K64F\n"
+                f"  Address      {IP_ADDRESS}:{TCP_PORT}\n"
+                "  Network      the PC's Ethernet adapter must be on 192.168.5.x\n"
+                f"  Status       {'connected' if connected else 'NOT reachable'}")
+        dlg = ConnectionDialog("Sensor link", body, "Reconnect", self)
+        dlg.exec()
+        if dlg.do_action:
+            self.reconnect_ethernet()
 
     def show_ethernet_help(self, title: str, lead: str = ""):
         """The one dialog that explains the power-cycle fix."""
@@ -438,19 +564,45 @@ class SensorPanel(QWidget):
     def reconnect_ethernet(self):
         """Re-open the socket without restarting the app."""
         if self.acquisition_active:
-            self.stop_acquisition()
+            self.stop_acquisition()   # synchronous - completes before we go on
 
+        if self._k64f_worker is not None:
+            self.status_message.emit("Still busy with the sensor controller…")
+            return
+
+        # K64F.reconnect() retries up to 6 times with a 1 s backoff between
+        # attempts, each bounded by a 2 s connect timeout - up to ~17 s on a
+        # dead link. This is the button an operator reaches for BECAUSE they
+        # suspect the link is dead, so it is the single most likely way to
+        # trigger the freeze: off the GUI thread for the same reason as
+        # start_acquisition above.
         self.reconnect_button.setEnabled(False)
+        self.acquire_button.setEnabled(False)
         self.status_message.emit("Reconnecting to sensor controller…")
-        QApplication.processEvents()
-        try:
-            ok = self.K64F.reconnect()
-        except Exception as e:
-            print(f"[ERROR] Reconnect failed: {e}")
-            ok = False
-        finally:
-            self.reconnect_button.setEnabled(True)
 
+        self._reconnect_ok = False
+
+        def _do_reconnect():
+            try:
+                self._reconnect_ok = self.K64F.reconnect()
+            except Exception as e:
+                print(f"[ERROR] Reconnect failed: {e}")
+                self._reconnect_ok = False
+
+        worker = _K64FCall(_do_reconnect, self)
+        self._k64f_worker = worker
+        worker.done.connect(self._on_reconnect_done)
+        worker.start()
+
+    def _on_reconnect_done(self):
+        worker, self._k64f_worker = self._k64f_worker, None
+        if worker is not None:
+            worker.wait()          # run() has already returned by now
+            worker.deleteLater()
+        self.reconnect_button.setEnabled(True)
+        self.acquire_button.setEnabled(True)
+
+        ok = self._reconnect_ok
         self._set_link_state(ok)
         self._watchdog_warned = False
         if ok:
@@ -499,7 +651,32 @@ class SensorPanel(QWidget):
                 "nothing to acquire. Try 'Reconnect' first.")
             return
 
-        self.K64F.start_acquisition()
+        if self._k64f_worker is not None:
+            self.status_message.emit("Still busy with the sensor controller…")
+            self.acquire_button.setChecked(False)
+            return
+
+        # K64F.start_acquisition() sends STOP-then-START and, on a stale link,
+        # retries a reconnect with backoff before giving up - several seconds
+        # on the socket, unbounded by anything the GUI can interrupt. Off the
+        # GUI thread, so the window (and every other button) stays alive
+        # while that plays out instead of freezing solid.
+        self.acquire_button.setEnabled(False)
+        self.reconnect_button.setEnabled(False)
+        self.status_message.emit("Starting acquisition…")
+
+        worker = _K64FCall(self.K64F.start_acquisition, self)
+        self._k64f_worker = worker
+        worker.done.connect(self._on_start_acquisition_done)
+        worker.start()
+
+    def _on_start_acquisition_done(self):
+        worker, self._k64f_worker = self._k64f_worker, None
+        if worker is not None:
+            worker.wait()          # run() has already returned by now
+            worker.deleteLater()
+        self.acquire_button.setEnabled(True)
+        self.reconnect_button.setEnabled(True)
 
         if self.K64F.data_stream is None:
             print("[ERROR] Data stream not initialized. Acquisition will not start.")
@@ -586,20 +763,20 @@ class SensorPanel(QWidget):
         self.indicators["n_by"].setText(f"{n_by:8.3f}")
         self.indicators["n_bz"].setText(f"{n_bz:8.3f}")
 
-        for i, series in enumerate(self.chart.series()):
-            if i < 6:
-                series.append(self.max_x, mean_ft[i])
-            elif i == 6:
-                series.append(self.max_x, n_bx)
-            elif i == 7:
-                series.append(self.max_x, n_by)
-            elif i == 8:
-                series.append(self.max_x, n_bz)
+        chart_vals = {
+            "px": px, "py": py, "pz": pz,
+            "fx": mean_ft[0], "fy": mean_ft[1], "fz": mean_ft[2],
+            "tx": mean_ft[3], "ty": mean_ft[4], "tz": mean_ft[5],
+            "raw_bx": float(raw_bx), "raw_by": float(raw_by), "raw_bz": float(raw_bz),
+            "n_bx": n_bx, "n_by": n_by, "n_bz": n_bz,
+        }
+        for key, series in self.chart_series.items():
+            series.append(self.max_x, chart_vals[key])
 
         self.max_x += 1
         self.axisX.setRange(max(0, self.max_x - PLOT_WINDOW), self.max_x)
 
-        for series in self.chart.series():
+        for series in self.chart_series.values():
             while len(series.points()) > PLOT_WINDOW:
                 series.remove(0)
 
@@ -607,14 +784,18 @@ class SensorPanel(QWidget):
             self._update_auto_range()
             self.apply_y_range()
 
-        # ---- touch-probe feed (sensor panel -> stage panel) ----
+        # ---- touch-probe / calibration feed (sensor panel -> stage panel) ----
+        #   (time_us, fx, fy, fz, tx, ty, tz, px, py, pz)  -- mean_ft averaged
         if self.touch_data_queue is not None:
+            payload = (int(time_us), float(mean_ft[0]), float(mean_ft[1]),
+                       float(mean_ft[2]), float(mean_ft[3]), float(mean_ft[4]),
+                       float(mean_ft[5]), float(px), float(py), float(pz))
             try:
-                self.touch_data_queue.put_nowait((int(time_us), float(mean_ft[2]), float(pz)))
+                self.touch_data_queue.put_nowait(payload)
             except Exception:
                 try:
                     _ = self.touch_data_queue.get_nowait()
-                    self.touch_data_queue.put_nowait((int(time_us), float(mean_ft[2]), float(pz)))
+                    self.touch_data_queue.put_nowait(payload)
                 except Exception:
                     pass
 
@@ -627,9 +808,14 @@ class SensorPanel(QWidget):
 
     # ------------------------------------------------------------------
     def shutdown(self):
-        """Stop acquisition and release the Ethernet socket."""
+        """Stop acquisition, the logging thread, and release the Ethernet socket."""
         try:
             self.stop_acquisition()
+        except Exception:
+            pass
+        try:
+            self.logging_thread.stop()
+            self.logging_thread.wait(800)
         except Exception:
             pass
         try:
@@ -663,6 +849,11 @@ class LoggingListener(QThread):
 
     def stop(self):
         self._running = False
+        # run() is blocked on queue.get(); unblock it so the thread can exit.
+        try:
+            self.logging_queue.put_nowait((False, ""))
+        except Exception:
+            pass
 
 
 # ---------------------------------------------------------------------------

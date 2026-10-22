@@ -14,7 +14,7 @@ venv/
 
 # Outputs / logs (generated data)
 output/
-output/*.csv
+*.csv
 *.log
 
 # OS

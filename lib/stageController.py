@@ -3,7 +3,7 @@ from __future__ import annotations
 import threading
 import time
 from dataclasses import dataclass
-from typing import Optional
+from typing import Optional, Tuple
 
 from pylablib.devices import Thorlabs
 
@@ -101,6 +101,11 @@ class _ChannelDisabled(Exception):
     """The controller switched its output off mid-motion (hardware error)."""
 
 
+class HomingAborted(RuntimeError):
+    """Homing was interrupted by abort() - an operator's emergency stop,
+    not a fault of the axis."""
+
+
 @dataclass
 class MoveCheck:
     """Result of a pre-move safety check."""
@@ -149,6 +154,25 @@ class StageController:
         # against the '+' switch as a fallback, and 0 mm was then derived from
         # the nominal travel - good enough to work with, but not a measured 0.
         self._reference_end = "reverse"
+
+        # --- emergency stop -------------------------------------------------
+        # Where this axis was when the operator's current COMMAND began (a
+        # jog, a home, a sequence step, a touch pass) - not before every
+        # internal move_by(): a touch probe's own abort-retract, say, must not
+        # become the point an emergency stop "returns" to. See
+        # arm_return_point() and return_to_point().
+        self.return_point_mm: Optional[float] = None
+        self.return_point_referenced = False
+        self._return_hold = False          # a blocking command owns the axis
+        self._return_until = 0.0           # a jog: expected to be moving until
+        # Set by abort(); every blocking loop in this class checks it, so a
+        # thread that was driving the axis stops commanding it instead of
+        # carrying on (a homing stall check calling stop() mid-return, etc).
+        self._abort = threading.Event()
+        # Homing interrupted by abort(): whether the controller may have
+        # re-zeroed its counter before it stopped (see _home_once).
+        self._home_interrupted = False
+        self._home_frame_changed = False
 
         print(f"[INFO] Initialising stage: {self.serial}")
         try:
@@ -505,11 +529,19 @@ class StageController:
         except Exception as e:
             raise ValueError(f"Distance must be numeric: {e}") from e
 
+        if self._abort.is_set():
+            # Nothing but the emergency stop's own return move (issued after
+            # clear_abort()) may move an axis while one is being handled -
+            # e.g. a touch probe's abort-retract, or a sequence's next step.
+            raise RuntimeError(f"Stage {self.serial}: emergency stop active; "
+                               f"move of {distance_mm:+.3f} mm refused.")
+
         # distance can be negative (direction), so do not block that
         try:
+            before = self.get_position_mm()
             distance_scaled = distance_mm / SCALE_FACTOR
             print(f"[INFO] Stage {self.serial} moving by {distance_mm:.4f} mm "
-                  f"(from {self._fmt(self.get_position_mm())} mm)")
+                  f"(from {self._fmt(before)} mm)")
             self._retry_comm(
                 lambda: self.stage.move_by(distance_scaled, scale=True),  # keep validated behaviour
                 "move",
@@ -533,6 +565,11 @@ class StageController:
         last_move_t = time.time()
 
         while time.time() - t0 < timeout_s:
+            if self._abort.is_set():
+                # abort() already stopped the axis; issuing anything more from
+                # here could cut off the emergency stop's own return move.
+                return False, "aborted by emergency stop"
+
             if should_continue is not None and not should_continue():
                 self.stop()
                 return True, "aborted"
@@ -575,6 +612,122 @@ class StageController:
                 self.stage.stop()
         except Exception as e:
             print(f"[WARN] Stage {self.serial} stop failed: {e}")
+
+    # ------------------------------------------------------------------
+    # Emergency stop
+    # ------------------------------------------------------------------
+    def arm_return_point(self, hold: bool = False,
+                         expected_s: Optional[float] = None) -> None:
+        """
+        Remember where this axis is as an operator command starts moving it.
+
+        hold=True   a blocking command owns the axis until it calls
+                    release_return_point() (home, a sequence step, a touch
+                    pass): an emergency stop any time before that returns
+                    the axis here.
+        hold=False  a fire-and-forget jog: counts as in flight only for
+                    expected_s, so an emergency stop long after the jog
+                    finished does not "undo" a move nobody is worried about.
+
+        Also records whether the position was referenced, because starting a
+        home clears the controller's homed bit - see return_to_point().
+        """
+        self.return_point_mm = self.get_position_mm()
+        self.return_point_referenced = self.is_referenced()
+        self._return_hold = bool(hold)
+        self._return_until = time.monotonic() + (expected_s or 0.0)
+        self._home_interrupted = False
+        self._home_frame_changed = False
+
+    def release_return_point(self) -> None:
+        """The command finished on its own - nothing left to undo."""
+        self.return_point_mm = None
+        self._return_hold = False
+        self._return_until = 0.0
+
+    def return_point_pending(self) -> bool:
+        """True if a command is moving this axis and could be undone."""
+        return self.return_point_mm is not None and (
+            self._return_hold or time.monotonic() < self._return_until)
+
+    def abort(self) -> None:
+        """
+        Emergency stop: halt now, and make every blocking loop in this class
+        (homing, wait_until_stopped) give up instead of carrying on.
+
+        Abrupt and non-blocking on purpose. The driver's default stop()
+        decelerates on a profile AND waits for it, so stopping three axes
+        with it halts X, then Y, then Z; this halts all three at once.
+        """
+        self._abort.set()
+        if self.stage is None:
+            return
+        try:
+            with self._lock:
+                self.stage.stop(immediate=True, sync=False)
+        except TypeError:
+            self.stop()
+        except Exception as e:
+            print(f"[WARN] Stage {self.serial} abort stop failed: {e}")
+
+    def clear_abort(self) -> None:
+        self._abort.clear()
+
+    def return_to_point(self, target_mm: float, was_referenced: bool,
+                        vel_mm_s: float = RECOMMENDED_VELOCITY_MM_S) -> Tuple[bool, str]:
+        """
+        Drive back to target_mm (the return point captured when the
+        emergency stop was pressed) and, if a home was interrupted on the
+        way, put the position reference back.
+
+        Starting a home clears the controller's homed bit, so an interrupted
+        home leaves the axis "not referenced" (the '?' next to its position)
+        even though nothing about its counter changed - UNLESS homing got as
+        far as the limit switch, where the controller re-zeroes the counter.
+        _home_once() watches for that. If it happened, the counter no longer
+        means what target_mm meant: the axis is left where it stopped, not
+        moved, and has to be homed again.
+
+        Returns (ok, reason); never raises - the caller is already handling
+        an emergency.
+        """
+        if self._abort.is_set():
+            return False, "aborted by emergency stop"
+
+        if self._home_interrupted and self._home_frame_changed:
+            return False, ("homing had reached the limit switch, so the controller may "
+                           "have re-zeroed; left where it stopped - home it again")
+
+        self.wait_until_stopped(timeout_s=2.0)
+        current = self.get_position_mm()
+        if current is None:
+            return False, "current position unknown; not moved"
+
+        delta = float(target_mm) - current
+        if abs(delta) > self.travel_mm:
+            return False, f"return of {delta:+.3f} mm exceeds the travel; not moved"
+
+        if abs(delta) >= 0.001:
+            try:
+                self.setup_velocity(0, 10, vel_mm_s)
+                self.move_by(delta)
+            except Exception as e:
+                return False, f"return move failed: {e}"
+            ok, reason = self.wait_until_stopped(timeout_s=abs(delta) / vel_mm_s + 15.0)
+            if not ok:
+                return False, reason
+
+        restored = ""
+        if self._home_interrupted and was_referenced and not self.is_homed():
+            # Same counter, same place: the old reference still holds. Marked
+            # as a manual reference, because that is what it now is - not a
+            # fresh home.
+            self._manual_reference = True
+            restored = "; position reference restored"
+        self._home_interrupted = False
+
+        pos = self.get_position_mm()
+        return True, f"returned to {self._fmt(pos)} mm{restored}"
 
     def disable_auto_updates(self) -> None:
         """Ask the controller to stop sending unprompted status updates."""
@@ -652,6 +805,11 @@ class StageController:
         if direction not in ("reverse", "forward"):
             raise ValueError(f"Unknown homing direction: {direction!r}")
 
+        # Home is a blocking command: an emergency stop before it finishes
+        # brings the axis back here (and restores its reference - starting a
+        # home clears the controller's homed bit).
+        self.arm_return_point(hold=True)
+
         if direction != self.home_direction:
             print(f"[INFO] Stage {self.serial}: homing against the '+' switch this time "
                   f"(fallback); the normal '-' direction is restored afterwards.")
@@ -659,6 +817,10 @@ class StageController:
 
         try:
             self._home_once(timeout_s)
+            # The controller has re-zeroed at the switch: from here on the
+            # return point is in a frame that no longer exists, so an abort
+            # during the rest of this method must not drive back to it.
+            self._home_frame_changed = True
             self._manual_reference = False      # a real home supersedes any manual zero
             self._reference_end = direction
 
@@ -675,6 +837,11 @@ class StageController:
                 # not have to drive the axis back by hand every time.
                 self._return_to_zero()
             return
+        except HomingAborted:
+            # Not a fault: the operator's emergency stop. The return point is
+            # left armed for it; see return_to_point().
+            self._home_interrupted = True
+            raise
         except _ChannelDisabled as e:
             print(f"[WARN] Stage {self.serial}: {e}")
             print(f"[INFO] Stage {self.serial}: releasing the axis; homing will NOT be "
@@ -698,6 +865,10 @@ class StageController:
                 f"use 'Set 0' at a position you know to work without homing."
             ) from e
         finally:
+            # Finished - successfully or with a fault of its own - so there is
+            # nothing for an emergency stop to undo. Only an abort keeps it.
+            if not self._abort.is_set():
+                self.release_return_point()
             # A fallback home is a one-off: leave the controller configured for
             # the normal '-' end so the next Home behaves as documented.
             if direction != self.home_direction:
@@ -759,6 +930,10 @@ class StageController:
         self._flush_comm()
         hw_errors_before = self.hw_error_count()
 
+        if self._abort.is_set():
+            raise HomingAborted(f"Homing of stage {self.serial} not started: "
+                                f"emergency stop is active.")
+
         # --- Start homing (async) ---
         started = False
         last_exc = None
@@ -784,9 +959,18 @@ class StageController:
         ref_pos = self.get_position_mm()
         last_move_t = time.time()
 
+        last_pos = ref_pos
         while time.time() - t0 < timeout_s:
             time.sleep(0.2)
             elapsed = time.time() - t0
+
+            if self._abort.is_set():
+                # abort() has already stopped the motor. Raise without any
+                # stop()/retreat of our own: the emergency stop owns the axis
+                # now and is about to drive it back.
+                raise HomingAborted(
+                    f"Homing of stage {self.serial} interrupted by emergency stop at "
+                    f"{self._fmt(self.get_position_mm())} mm.")
 
             try:
                 if self.stage.is_homed():
@@ -807,6 +991,18 @@ class StageController:
 
             status = self.get_status_list()
             pos = self.get_position_mm()
+
+            # Has the controller (possibly) re-zeroed its counter? It does so
+            # at the limit switch. Seeing a limit bit, or the position jumping
+            # further in one 0.2 s poll than the stage can travel (2.4 mm/s max),
+            # means an interrupted home can no longer trust the old frame -
+            # see return_to_point().
+            if "hw_bk_lim" in status or "hw_fw_lim" in status:
+                self._home_frame_changed = True
+            if pos is not None and last_pos is not None and abs(pos - last_pos) > 1.0:
+                self._home_frame_changed = True
+            if pos is not None:
+                last_pos = pos
 
             # --- 1) Controller latched its output off (hardware error) ---
             if "enabled" not in status:
@@ -908,7 +1104,16 @@ def wait_until_all_stopped(controllers, should_continue=None, timeout_s: float =
     ref_pos = {c: c.get_position_mm() for c in controllers}
     last_move = {c: time.time() for c in controllers}
 
+    def aborting(c) -> bool:
+        ev = getattr(c, "_abort", None)
+        return isinstance(ev, threading.Event) and ev.is_set()
+
     while time.time() - t0 < timeout_s:
+        if any(aborting(c) for c in controllers):
+            # Emergency stop: the axes are already stopped and are about to be
+            # driven back; a stop_all() from here could cut that off.
+            return True, "aborted by emergency stop"
+
         if should_continue is not None and not should_continue():
             stop_all()
             return True, "aborted"

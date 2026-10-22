@@ -1,19 +1,22 @@
 # -*- mode: python ; coding: utf-8 -*-
 """
-PyInstaller build for ATI_App.
+PyInstaller build for ATI_Rig.
 
-Produces  dist/ATI_App/ATI_App.exe  - a one-folder Windows application that
-runs with no Python installed and no PyCharm. Build it with:
+Produces  dist/ATI_Rig/ATI_Rig.exe  - a one-folder Windows application
+that runs with no Python installed and no PyCharm. Build it with:
 
     cd <project root>
-    pyinstaller packaging\\ATI_App.spec --noconfirm
+    pyinstaller packaging\\ATI_Rig.spec --noconfirm
 
 The data folders (sequences, output, config, logs) are created next to the
-.exe on first run, so the whole dist\\ATI_App folder can be copied anywhere -
-including onto the rig PC - and stays self-contained.
+.exe on first run, so the whole dist\\ATI_Rig folder can be copied anywhere
+- including onto the rig PC - and stays self-contained.
 """
 
 import os
+import sys
+from pathlib import Path
+import PyQt6
 
 from PyInstaller.utils.hooks import collect_all, collect_submodules
 
@@ -28,7 +31,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(SPECPATH, ".."))
 #   True  - the [INFO]/[WARN]/[SAFETY] diagnostics appear in a black terminal
 #           window as they do in PyCharm. Useful while commissioning.
 #   False - GUI only, the way a finished Windows program looks. Nothing is
-#           lost: the same output is written to logs\\ATI_App_<date>.log.
+#           lost: the same output is written to logs\\ATI_Rig_<date>.log.
 #
 # Set back to True if the program ever misbehaves and you want the diagnostics
 # live rather than reading them out of the log afterwards.
@@ -68,6 +71,14 @@ hiddenimports = (
     ]
 )
 
+# Resolve native libraries from this Python/Qt installation and Windows.
+# Extra tools on PATH can otherwise supply an incompatible icuuc.dll.
+qt_bin = Path(PyQt6.__file__).parent / "Qt6" / "bin"
+windows = Path(os.environ.get("SystemRoot", r"C:\Windows"))
+os.environ["PATH"] = os.pathsep.join(map(str, (
+    qt_bin, Path(sys.base_prefix), windows / "System32", windows,
+)))
+
 a = Analysis(
     [os.path.join(PROJECT_ROOT, "main.py")],
     pathex=[PROJECT_ROOT],
@@ -100,7 +111,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name="ATI_App",
+    name="ATI_Rig",
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -121,5 +132,5 @@ coll = COLLECT(
     strip=False,
     upx=False,
     upx_exclude=[],
-    name="ATI_App",
+    name="ATI_Rig",
 )

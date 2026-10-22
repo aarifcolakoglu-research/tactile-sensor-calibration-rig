@@ -9,7 +9,7 @@ files across the disk or fail outright.
 
 Everything therefore goes through DATA_ROOT:
 
-  * frozen (PyInstaller .exe)  -> the folder holding ATI_App.exe
+  * frozen (PyInstaller .exe)  -> the folder holding ATI_Rig.exe
   * normal Python run          -> the project root (parent of lib/)
 
 so a user can move the whole application folder anywhere, or run it from a
@@ -24,7 +24,7 @@ import sys
 
 def _data_root() -> str:
     if getattr(sys, "frozen", False):
-        # PyInstaller: sys.executable is .../ATI_App/ATI_App.exe
+        # PyInstaller: sys.executable is .../ATI_Rig/ATI_Rig.exe
         return os.path.dirname(os.path.abspath(sys.executable))
     # lib/paths.py -> lib -> project root
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
